@@ -1,16 +1,20 @@
 #!/usr/bin/python3
 import random 
+#system picks the random number from the dices
 count=0
 r=0
 while count<=100:
+    #count is less than or equal to hundred
     roll=input("press r to roll the dice")
+    #dice is rolled while pressing r
     if roll=="r":
         r=random.randint(1,6)
         count=count+r
+        #count is equal to count plus random number
         print("your random num is",r)
         print("you are on count",count)
         if count==8:
-           count=37z
+           count=37
            print("wow.....up the ladder",count)
         elif count==11:
              count=2
@@ -44,3 +48,4 @@ while count<=100:
              print(":(...down the ladder",count)
         elif count>=100:
         	 print("you are always the winner")
+                #it prints the result as i am the winner
